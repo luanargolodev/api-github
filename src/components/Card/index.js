@@ -13,15 +13,9 @@ const Card = ({ data }) => {
           <h1 className="title">{data.login}</h1>
         )}
         {data.location && <p className="subtitle">{data.location}</p>}
-        <Button style={{ marginTop: '10px' }}>
-          Repositórios: {data.public_repos}
-        </Button>
-        <Button style={{ marginLeft: '10px' }}>
-          Seguindo: {data.following}
-        </Button>
-        <Button style={{ marginLeft: '10px' }}>
-          Seguidores: {data.followers}
-        </Button>
+        <Button>Repositórios: {data.public_repos}</Button>
+        <Button>Seguindo: {data.following}</Button>
+        <Button>Seguidores: {data.followers}</Button>
       </div>
     </div>
   );

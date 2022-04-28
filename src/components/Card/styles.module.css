@@ -10,8 +10,13 @@
   border-radius: 50%;
 }
 
+.card_item {
+  padding-bottom: 5px;
+  font-size: 50px;
+}
+
 @media (max-width: 520px) {
   .card > div {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
