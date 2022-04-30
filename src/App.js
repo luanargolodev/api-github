@@ -42,9 +42,10 @@ const App = () => {
         name="github"
         value={github}
         onChange={handleChange}
+        onSubmit={handleClick}
       />
       <Button onClick={handleClick}>Buscar</Button>
-      {showCard && <Card data={data} />}
+      {showCard && <Card data={data} profile={github} />}
     </div>
   );
 };

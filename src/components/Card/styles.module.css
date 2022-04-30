@@ -15,8 +15,63 @@
   font-size: 50px;
 }
 
-@media (max-width: 520px) {
+.company::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #e5e5e5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.repos {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.repo {
+  border: none;
+  background-color: #fa0;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.repo:hover {
+  background-color: #fb9;
+  cursor: pointer;
+}
+
+.repo_language {
+  font-size: 0.875rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.repo_language::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 700px) {
+  .repos {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .card > div {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .repos {
+    grid-template-columns: 1fr;
   }
 }

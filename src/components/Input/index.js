@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-const Input = ({ label, type, name, value, onChange }) => {
+const Input = ({ label, type, name, value, onChange, handleSubmit }) => {
   return (
     <div className={styles.wrapper}>
       <label htmlFor={name} className={styles.label}>
@@ -14,7 +14,6 @@ const Input = ({ label, type, name, value, onChange }) => {
         type={type}
         value={value}
         onChange={onChange}
-        required
       />
     </div>
   );
